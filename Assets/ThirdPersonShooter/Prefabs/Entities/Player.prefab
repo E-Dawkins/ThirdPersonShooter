@@ -40,8 +40,8 @@ AudioSource:
   m_GameObject: {fileID: 593988354986023998}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2460576816614001190, guid: 4344afe7e62f03843a8837b6d08da91b, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 9922a12f34d0a084aab32de985459723, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -136,6 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 593988355348500525}
+  - component: {fileID: 1669982858772812922}
   m_Layer: 3
   m_Name: Weapon
   m_TagString: Player
@@ -157,6 +158,21 @@ Transform:
   m_Father: {fileID: 593988356626421703}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669982858772812922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593988355348500524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86c9eb16fb14e6aba944394d64bc362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootAction: {fileID: 3074992884157387178, guid: a643646fa77af2d41bce7d147056ce5f, type: 3}
+  shootPoint: {fileID: 7357379079360834554}
+  bulletLine: {fileID: 2911196341344331779, guid: 2d4a879ffecde2a4eb143403ce8d23ae, type: 3}
 --- !u!1 &593988355766675974
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,8 +213,8 @@ AudioSource:
   m_GameObject: {fileID: 593988355766675974}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -2460576816614001190, guid: 4344afe7e62f03843a8837b6d08da91b, type: 2}
+  m_audioClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -598,6 +614,11 @@ MonoBehaviour:
     range: 5
     damage: 1
     attackRate: 0.25
+  pauseAction: {fileID: -7656403429045229154, guid: a643646fa77af2d41bce7d147056ce5f, type: 3}
+  input: {fileID: 593988356455228438}
+  weapon: {fileID: 1669982858772812922}
+  hurtSource: {fileID: 593988354986023996}
+  deathSource: {fileID: 593988355766675972}
 --- !u!54 &3223524658527440334
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1800,7 +1821,7 @@ GameObject:
   - component: {fileID: 7357379079360834476}
   - component: {fileID: 7357379079368573980}
   m_Layer: 3
-  m_Name: Player
+  m_Name: Render
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1833,7 +1854,7 @@ Animator:
   m_GameObject: {fileID: 7357379079361197970}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f1d84cc28597f5641a3d9cbc4df7e306, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 689e832c746e9e749b06b933e30c8dc4, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
